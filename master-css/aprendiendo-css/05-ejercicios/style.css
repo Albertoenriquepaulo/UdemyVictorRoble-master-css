@@ -142,4 +142,16 @@
   z-index: 1;
 }
 
+.fija {
+  position: fixed;
+  top: 50%;
+  left: 0px;
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 13px;
+}
+
 /* Podemos mover los z-index para entender lo que pasa, a mayor z-index mas al frente se coloca la figura */
