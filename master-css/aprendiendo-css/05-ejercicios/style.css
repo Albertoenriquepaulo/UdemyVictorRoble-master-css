@@ -88,6 +88,7 @@
 }
 
 #contenido .caja {
+  position: relative;
   width: 40%;
   height: 250px;
   line-height: 230px;
@@ -117,3 +118,28 @@
   color: #444;
   border-top: 2px solid #ccc;
 }
+
+.libre {
+  position: absolute;
+  top: 600px;
+  left: 40%;
+  border: 1px solid black;
+  background-color: red;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 13px;
+}
+
+.libre2 {
+  background-color: green;
+  top: 580px;
+  left: 42%;
+  z-index: 2;
+}
+
+.libre1 {
+  z-index: 1;
+}
+
+/* Podemos mover los z-index para entender lo que pasa, a mayor z-index mas al frente se coloca la figura */
