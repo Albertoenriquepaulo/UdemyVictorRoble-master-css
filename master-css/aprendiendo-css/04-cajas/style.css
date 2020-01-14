@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  padding: 40px;
+}
+
+.caja {
+  display: block;
+  width: 250px;
+  height: 250px;
+  background-color: lightblue;
+  border: 5px solid red;
+  margin: 15px;
+  padding: 20px;
+  float: left;
+}
+
+.caja p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 245px;
+}
+
+.clearfix {
+  float: none;
+  clear: both; /*lef solo limpiaria el de la izquierda que es este el caso,right, limpiaria el de la derecha y both todos los flotados para usar esto se creo una div en el HTML, cosa que no me convence en este momento*/
+}
