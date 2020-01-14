@@ -1,0 +1,29 @@
+body {
+  background-color: #ccc;
+  /* background-image: url(img/paisaje.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: left; */
+  color: black;
+  text-align: justify;
+}
+
+#caja {
+  border: 5px solid black;
+  padding: 10px;
+  background-color: rgb(23, 188, 238);
+  color: white;
+  font-family: monospace;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  vertical-align: top;
+}
+
+h2 {
+  color: red;
+  background: white;
+  border: 5px solid pink;
+  background-image: url(img/bgPattern2.jpg);
+}

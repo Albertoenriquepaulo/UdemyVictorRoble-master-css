@@ -8,6 +8,17 @@ h1 {
   font-style: italic;
   text-transform: uppercase;
   font-size: 45px;
+
+  /* COLORES */
+
+  /* Colores del sistema*/
+  color: MediumSeaGreen;
+  /* Colores hexadecimales*/
+  color: #352d2d;
+  /* Colores RGB*/
+  color: rgb(125, 255, 139);
+  /* Colores RGBA*/
+  color: rgba(125, 255, 139, 0.5);
 }
 
 h3 {
@@ -15,6 +26,7 @@ h3 {
     Arial, sans-serif;
   font-size: 25px;
   font-weight: lighter;
+  color: olive;
 }
 
 p {
