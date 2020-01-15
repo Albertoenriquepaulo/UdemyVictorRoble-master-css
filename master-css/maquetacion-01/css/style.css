@@ -46,6 +46,11 @@ a:hover {
 .blue {
   color: #0c73f2 !important;
 }
+
+.orange {
+  color: #d69d2a !important;
+}
+
 /*Formularios*/
 input[type="text"],
 input[type="email"],
@@ -256,7 +261,6 @@ button:active {
 }
 
 #frase {
-  clear: both;
   width: 180px;
   padding: 10px;
   font-size: 14px;
@@ -342,6 +346,7 @@ div button {
   font-weight: normal;
   letter-spacing: 1px;
   text-align: center;
+  margin-top: -20px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
@@ -367,4 +372,15 @@ div button {
 #sections .date {
   color: gray;
   font-size: 12px;
+}
+
+#sections .stickerOne,
+.stickerTwo {
+  position: absolute;
+  margin-top: -38px;
+  z-index: 0;
+}
+
+#sections .stickerTwo {
+  margin-left: 860px;
 }
