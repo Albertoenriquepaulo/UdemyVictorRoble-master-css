@@ -102,5 +102,52 @@ body {
 
 #nav > ul > li:hover {
   background-color: #70b231;
-  box-shadow: 0px 0px 4px green, inset;
+  box-shadow: 0px 0px 3px green inset;
+}
+
+/* MENU DESPLEGABLE */
+#nav > ul > li > ul {
+  display: none;
+  position: absolute; /*Para que no desfigure la estructura del sitio web, que solo sobresalga cuando tenga que sobresalir*/
+  width: 160px;
+  box-shadow: 0px 2px 2px gray;
+  z-index: 1;
+}
+
+#nav > ul > li:hover ul {
+  display: block;
+}
+
+/*Asi lo hizo Victor, y me parece que está mal formulado, abajo mi correción*/
+/*Para darle formato a los botones desplegables*/
+/* #nav > ul > li:hover ul > li {
+  background-color: #f2f1f0;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 8px;
+  line-height: 8px;
+  font-size: 13px;
+  transition: background-color 300ms;
+} */
+
+#nav > ul > li > ul > li {
+  background-color: #f2f1f0;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 8px;
+  line-height: 8px;
+  font-size: 13px;
+  transition: background-color 300ms;
+}
+
+#nav > ul > li > ul > li a {
+  color: #666666;
+}
+
+/*Asi lo hizo Victor, y me parece que está mal formulado, abajo mi correción*/
+#nav > ul > li:hover ul > li:hover {
+  background-color: #ccc;
+}
+
+#nav > ul > li > ul > li:hover {
+  /* box-shadow: 0px 0px 6px #ccc inset; */
+  background-color: #ccc;
 }
