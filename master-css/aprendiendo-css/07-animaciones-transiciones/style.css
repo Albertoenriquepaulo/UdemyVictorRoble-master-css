@@ -24,3 +24,51 @@
   background: orangered;
   border: 3px solid red;
 }
+
+#caja {
+  margin-top: 25px;
+  width: 250px;
+  height: 250px;
+  background: lightseagreen;
+  color: white;
+  border: 5px solid black;
+  font-size: 20px;
+  text-align: center;
+  line-height: 230px;
+  animation-name: desplazamiento;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; /* Misma velocidad */
+}
+
+/* Esta es una forma, 
+@keyframes desplazamiento {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 1200px;
+  }
+} */
+
+@keyframes desplazamiento {
+  0% {
+    margin-left: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+    margin-left: 1200px;
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
+  75% {
+    background-color: red;
+  }
+  77% {
+    border: 10px dashed blue;
+  }
+  100% {
+    margin-left: 0px;
+    transform: rotate(0deg);
+  }
+}
