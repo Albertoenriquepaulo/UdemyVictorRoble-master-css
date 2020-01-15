@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+  font-size: 20px;
+}
+
+ul li:first-child {
+  /*Selecciona el primer  li, no el hijo de ese li*/
+  color: purple;
+  font-weight: bold;
+}
+
+ul li:nth-child(3) {
+  /*Selecciona el elemento nro tres de la lista*/
+  color: green;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+#mi-enlace {
+  font-size: 30px;
+  color: lightsalmon;
+}
+
+#mi-enlace:link {
+  /*Cuando no se ha visitado el enlace*/
+  color: red;
+}
+
+#mi-enlace:visited {
+  /*Cuando YA se ha visitado el enlace*/
+  color: aqua;
+}
+
+#mi-enlace:hover {
+  color: black;
+}
+
+#mi-enlace:active {
+  font-size: 32px;
+  color: burlywood;
+}
+
+input[type="text"] {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+input[type="text"]:focus {
+  border: 4px dashed red;
+}

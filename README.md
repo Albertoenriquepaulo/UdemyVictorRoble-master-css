@@ -14,3 +14,7 @@
 ## 33. Posicionamiento de cajas
 
 La propiedad **Float** se puede aplicar a todos los elementos cuyo **display** sea block.
+
+## 49. Pseudoclases
+
+En este [link](https://www.w3schools.com/css/css_pseudo_classes.asp) se puede ver claramente lo de las **Pseudoclases** en CSS
