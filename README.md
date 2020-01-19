@@ -15,6 +15,14 @@
 
 La propiedad **Float** se puede aplicar a todos los elementos cuyo **display** sea block.
 
+## ClearFix, ¿como funciona? (No aparece en el curso)
+
+[Good Trick](http://nicolasgallagher.com/micro-clearfix-hack/)
+[Good Video](https://www.youtube.com/watch?v=xFGBNv2KeVU)
+[Good Video](https://www.youtube.com/watch?v=2tC4PIlEz_o)
+
+Some CSS good [Tricks](https://www.youtube.com/watch?v=CxC925yUxSI)
+
 ## 49. Pseudoclases
 
 En este [link](https://www.w3schools.com/css/css_pseudo_classes.asp) se puede ver claramente lo de las **Pseudoclases** en CSS
