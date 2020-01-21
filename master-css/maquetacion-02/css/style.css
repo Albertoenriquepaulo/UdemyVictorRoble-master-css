@@ -345,6 +345,20 @@ aside h3 {
   color: #2f78bc;
 }
 
+#social {
+  height: 180px;
+}
+
+#social a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20;
+}
+
 /*
 article #titulo-ultimo-articulo {
   display: inline-block;
