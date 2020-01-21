@@ -42,7 +42,7 @@ body {
 
 .gear,
 .icon {
-  font-family: WebSymbolsRegular;
+  font-family: "WebSymbolsRegular";
 }
 
 .clearfix:before,
@@ -56,7 +56,7 @@ body {
   width: 100%;
   height: 70px;
   background-color: black;
-  font-family: BebasNeue;
+  font-family: "BebasNeue";
   color: white;
 }
 
@@ -210,6 +210,11 @@ aside h3 {
   padding-left: 15px;
   margin-top: 30px;
   margin-bottom: 15px;
+}
+
+#login form label,
+aside div form [button] {
+  font-family: "WebSymbolsRegular";
 }
 
 /*
