@@ -530,6 +530,6 @@ footer a {
   transition: all 300ms;
 }
 
-/* #footer #browsers img:hover {
+#footer #browsers img:hover {
   width: 50px;
-} */
+}
