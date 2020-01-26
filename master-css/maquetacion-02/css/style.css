@@ -257,6 +257,11 @@ body {
   margin: 16px;
   margin-top: 40px;
   cursor: pointer;
+  transition: all 300ms;
+}
+
+.card:hover {
+  background: #000;
 }
 
 .card .icon {
@@ -269,6 +274,22 @@ body {
   margin: 0 auto;
   /* margin-top: 30px;
   margin-bottom: 50px; */
+  transition: all 300ms;
+}
+
+.card:hover .icon {
+  font-size: 60px;
+  color: #37bcf9;
+  animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
 .category {
@@ -280,9 +301,26 @@ body {
   text-align: center;
   color: #00538c;
   margin: 0 auto;
+  transition: all 300ms;
   /*
   margin-bottom: 30px;
   ; */
+}
+
+.card:hover .category {
+  color: white;
+  animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory {
+  from {
+    transform: translateY(-350%);
+    color: black;
+  }
+  to {
+    transform: translateY(0%);
+    color: white;
+  }
 }
 
 .description {
@@ -290,6 +328,23 @@ body {
   text-align: center;
   color: #0370b9;
   font-size: 15px;
+  transition: all 300ms;
+}
+
+.card:hover .description {
+  color: white;
+  animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription {
+  from {
+    transform: translateX(-350%);
+    color: black;
+  }
+  to {
+    transform: translateX(0%);
+    color: white;
+  }
 }
 
 /* BARRA LATERAL */
