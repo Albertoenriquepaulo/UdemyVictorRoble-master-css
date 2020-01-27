@@ -45,16 +45,16 @@ body {
   font-family: "WebSymbolsRegular";
 }
 
-/* .clearfix {
+.clearfix {
   float: none;
   clear: both;
-} */
+}
 
 .clearfix::before {
   /* float: none;
   clear: both; */
-  content: " ";
-  display: table;
+  /* content: " ";
+  display: table; */
 }
 
 /* CABECERA */
