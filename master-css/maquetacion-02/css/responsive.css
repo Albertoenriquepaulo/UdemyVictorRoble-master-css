@@ -135,6 +135,26 @@
   }
 }
 
+@media (max-width: 724px) {
+  #header {
+    width: 100%;
+    height: 110px;
+    padding-top: 10px;
+  }
+
+  #logo {
+    float: none;
+    margin: 0 auto;
+  }
+
+  #menu {
+    clear: both;
+    float: none;
+    width: 435px;
+    margin: 0px auto;
+  }
+}
+
 @media (max-width: 709px) {
   #info p img {
     width: 140%;
@@ -150,5 +170,17 @@
   }
   .card .description {
     display: none;
+  }
+}
+
+@media (max-width: 709px) {
+  #banner h1 {
+    font-size: 180%;
+  }
+}
+
+@media (max-width: 709px) {
+  #lateral input[type="text"] {
+    width: 72%;
   }
 }
