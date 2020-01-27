@@ -127,3 +127,28 @@
     margin: 20px;
   }
 }
+
+@media (max-width: 737px) {
+  aside h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 709px) {
+  #info p img {
+    width: 140%;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .category {
+    font-size: 85%;
+    margin-top: -20px;
+  }
+  .card .description {
+    display: none;
+  }
+}
