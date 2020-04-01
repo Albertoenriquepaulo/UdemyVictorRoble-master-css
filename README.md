@@ -26,3 +26,14 @@ Some CSS good [Tricks](https://www.youtube.com/watch?v=CxC925yUxSI)
 ## 49. Pseudoclases
 
 En este [link](https://www.w3schools.com/css/css_pseudo_classes.asp) se puede ver claramente lo de las **Pseudoclases** en CSS
+
+## 125. SASS
+
+En este [link](https://sass-lang.com/guide) tenemos una guia de **SASS Basic**
+
+Para usar SASS hay dos maneras, es recomendable usar en la que es necesario instalar NodeJS
+
+```shell
+npm install -g sass
+```
+
