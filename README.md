@@ -37,3 +37,18 @@ Para usar SASS hay dos maneras, es recomendable usar en la que es necesario inst
 npm install -g sass
 ```
 
+El archivo sass puede tener la extensión _.scss_ o _.sass_, y se compila de la suguiente forma
+
+```shell
+sass --watch estilos.scss style.css
+```
+
+## Compilar SASS
+
+```shell
+sass --watch fileToCompile.scss fileToGenerate.css
+```
+
+
+
+ 
