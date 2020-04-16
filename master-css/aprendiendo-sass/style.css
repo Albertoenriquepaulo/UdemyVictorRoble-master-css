@@ -64,6 +64,24 @@ p {
   color: gray;
 }
 
+.clearfix {
+  clear: both;
+}
+
+h1 {
+  font-size: 25px -1px;
+}
+
+.cajas {
+  width: 900px;
+  clear: both;
+}
+
+.caja {
+  width: 22.2222222222%;
+  float: left;
+}
+
 h1 {
   text-decoration: underline;
 }
