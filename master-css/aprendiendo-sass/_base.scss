@@ -123,6 +123,11 @@ h1 {
 }
 
 //For
+@for $contador from 1 through 12 {
+  .listado ul li:nth-child(#{($contador)}) {
+    font-size: $contador * 3px;
+  }
+}
 
 //Each
 
