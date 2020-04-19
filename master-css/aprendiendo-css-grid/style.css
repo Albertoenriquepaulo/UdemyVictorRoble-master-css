@@ -5,7 +5,8 @@ body {
 }
 
 .layout {
-  width: 1200px;
+  /* Para el responsive cambiamos el valor del width de 1200px a 80% */
+  width: 80%;
   height: 600px;
   margin: 0px auto;
   display: grid;
