@@ -4,7 +4,9 @@ body {
 }
 
 #layout {
-  display: inline-flex;
+  display: inline-flex; /*con esto el tamaño del div layout se adapta al contenidod e la caja */
+  flex-direction: unset;
+
   border: 3px solid black;
   padding: 5px;
 }
