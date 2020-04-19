@@ -13,7 +13,13 @@ body {
   padding: 5px;
 }
 
+/*Usaremos flex-grow, pero esta no puede ser usada dentro de la layout. Se usa en los elementos hijos del container de flex
+flex-grow, permitirá adaptar el tamaño de cada una de las cajas a nuestro antojo, veamos ejemplo aqui abajo
+*/
 .caja {
+  flex-grow: 1; /*Valor 1 siginifica que cada elemento que tenga esta propiedad ocupará el mismo espacio dentro del contenedor de flexbox.
+  Esta propiedad dirá cuanto puede crecer un elemento dentro de un contenedor, para esto le aplicaremos esta propiedad a cada elemento individualmente, ver .red, .blue...*/
+
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -24,22 +30,17 @@ body {
   background: gray;
 }
 
-/*Propiedad Order, no se aplica en este caso al layout, sino a los elementos que están dentro del layout, ejemplo aqui abajo*/
-
 .red {
+  flex-grow: 5;
   background: red;
-  order: 3;
 }
 .green {
   background: green;
-  order: 4;
 }
 .blue {
-  /*order: -1;*/ /*Lo coloca de primero si no le pongo order a los otros elementos, podria colocar otro en -2 y dejar este en -1, el de -2 se colocará primero*/
-  order: 2;
   background: blue;
 }
 .orange {
-  order: 1;
+  flex-grow: 10;
   background: orange;
 }
