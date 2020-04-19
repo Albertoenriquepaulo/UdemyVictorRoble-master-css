@@ -198,3 +198,55 @@ body {
   text-align: right;
   color: #444;
 }
+
+/*Mejorando el responsive*/
+@media (max-width: 1332px) {
+  #header {
+    text-align: center;
+  }
+  #menu > ul {
+    margin-top: 20px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 700px) {
+  #content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #aside {
+    margin-right: 0px;
+  }
+
+  .project {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  /*Para controlar los elementos del menu, le pondremos flex a l ul*/
+  #aside ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  #aside ul li {
+    flex-grow: 1;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 527px) {
+  #footer .logo,
+  #footer .info {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}

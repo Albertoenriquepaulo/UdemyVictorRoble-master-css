@@ -1,0 +1,4 @@
+body {
+  --rojo: red; /*OJO -> Asi se crean variables en CSS puro*/
+  background: var(--rojo);
+}
