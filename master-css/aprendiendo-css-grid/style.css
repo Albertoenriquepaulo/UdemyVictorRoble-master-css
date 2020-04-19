@@ -10,7 +10,11 @@ body {
   /* Definir el grid al layout */
   display: grid;
 
-  grid-template-columns: 50% 45%;
+  /*Varias formas de definir las columnas*/
+  /* grid-template-columns: repeat(4, calc(25% - 10px)); */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr ; */
+  /* grid-template-columns: repeat(, calc(25% - 10px)) 15% 35%; */
+  grid-template-columns: repeat(4, 1fr);
 
   /* Espacios entre elementos grid */
   grid-gap: 10px;
