@@ -4,8 +4,10 @@ body {
 }
 
 #layout {
-  display: inline-flex; /*con esto el tamaño del div layout se adapta al contenidod e la caja */
-  flex-direction: unset;
+  display: flex; /*con esto el tamaño del div layout se adapta al contenidod e la caja */
+  /*flex-direction: unset;*/
+  /*flex-wrap: wrap;*/ /*Hace que el layout arrope todo su contenido (evita que se slagan los elementos del div layout en este caso), si pasa el tamaño los pasa a el row de abajo*/
+  flex-flow: row wrap; /*Une la dirección y el wrap en una sola linea, equivale a escribir flex-direction y flex-wrap*/
 
   border: 3px solid black;
   padding: 5px;
