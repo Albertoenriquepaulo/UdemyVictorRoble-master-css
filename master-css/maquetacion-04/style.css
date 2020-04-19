@@ -160,8 +160,11 @@ body {
 }
 
 #footer {
+  display: grid;
+  grid-template-columns: 80% 20%;
   height: 120px;
   border-top: 1px solid rgba(225, 225, 226, 0.8);
+  align-items: center;
 }
 
 #footer .logo {
