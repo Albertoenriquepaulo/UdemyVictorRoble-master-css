@@ -10,22 +10,14 @@ body {
   /*flex-wrap: wrap;*/ /*Hace que el layout arrope todo su contenido (evita que se slagan los elementos del div layout en este caso), si pasa el tamaño los pasa a el row de abajo*/
   flex-flow: row wrap; /*Une la dirección y el wrap en una sola linea, equivale a escribir flex-direction y flex-wrap*/
 
+  /*ESTA ES LA QUE USAMOS PARA ALINEAR HORIZONTALMENTE*/
+  justify-content: space-around;
+
   border: 3px solid black;
   padding: 5px;
 }
 
-/*Usaremos flex-grow, pero esta no puede ser usada dentro de la layout. Se usa en los elementos hijos del container de flex
-flex-grow, permitirá adaptar el tamaño de cada una de las cajas a nuestro antojo, veamos ejemplo aqui abajo
-*/
 .caja {
-  /*
-  Ojo, con solo el uso de flex-basis, no serán contenedores flexibles automáticos.
-  Es necesario combinarlo con flex-grow
-  Inlcuso en este ejemplo podemos quitar el "flex-basis: calc((100% / 3) - 68px);" y dejarle solo el flex-basis a la última caja la orange y se veremos el mismo resultado, intentalo y verás
-*/
-
-  flex-grow: 1;
-  flex-basis: calc((100% / 3) - 68px); /*La funcion calc es de CSS puro y nos permite hacer calculos*/
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -36,24 +28,16 @@ flex-grow, permitirá adaptar el tamaño de cada una de las cajas a nuestro anto
   background: gray;
 }
 
-/*flex-basis le dice a cada elemento dentro del contenedor flex, que tamaño minimo (tamaño base) deberá tener, y a partir de ahí expandiorse si tienen que expandirse o quedarse con ese tamaño*/
-
 .red {
-  /*flex-basis: 25%;*/ /*este equivaldría a width: 25%;*/
-  /* flex-basis: calc(100% / 3); */
   background: var(--rojo);
 }
 
 .green {
-  /* flex-basis: calc(100% / 3); */
   background: green;
 }
 .blue {
-  /* flex-basis: calc(100% / 3); */
   background: blue;
 }
 .orange {
-  /* flex-basis: calc(100% / 3); */
-  flex-basis: 100%;
   background: orange;
 }
