@@ -24,15 +24,22 @@ body {
   background: gray;
 }
 
+/*Propiedad Order, no se aplica en este caso al layout, sino a los elementos que están dentro del layout, ejemplo aqui abajo*/
+
 .red {
   background: red;
+  order: 3;
 }
 .green {
   background: green;
+  order: 4;
 }
 .blue {
+  /*order: -1;*/ /*Lo coloca de primero si no le pongo order a los otros elementos, podria colocar otro en -2 y dejar este en -1, el de -2 se colocará primero*/
+  order: 2;
   background: blue;
 }
 .orange {
+  order: 1;
   background: orange;
 }
