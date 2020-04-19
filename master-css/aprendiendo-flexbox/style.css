@@ -34,7 +34,11 @@ flex-grow, permitirá adaptar el tamaño de cada una de las cajas a nuestro anto
   flex-grow: 5;
   background: red;
 }
+
+/*Con flex-grow vimos como aumentar el tamaño, con shrink podemos contraer el tamaño, aqui abajo le aplicamos ambos a cero y disminuimos un poco el tamaño de la caja green*/
 .green {
+  flex-grow: 0;
+  flex-shrink: 0;
   background: green;
 }
 .blue {
