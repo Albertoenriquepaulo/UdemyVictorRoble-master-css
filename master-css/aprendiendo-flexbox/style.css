@@ -11,7 +11,11 @@ body {
   flex-flow: row wrap; /*Une la dirección y el wrap en una sola linea, equivale a escribir flex-direction y flex-wrap*/
 
   /*ESTA ES LA QUE USAMOS PARA ALINEAR HORIZONTALMENTE*/
-  justify-content: space-around;
+  justify-content: space-evenly;
+
+  height: 400px;
+  /*ESTA ES LA QUE USAMOS PARA ALINEAR VERTICALMENTE*/
+  align-items: center;
 
   border: 3px solid black;
   padding: 5px;
@@ -29,15 +33,19 @@ body {
 }
 
 .red {
+  align-self: flex-start;
   background: var(--rojo);
 }
 
 .green {
+  margin-top: -10%;
   background: green;
 }
 .blue {
+  align-self: center;
   background: blue;
 }
 .orange {
+  align-self: flex-end;
   background: orange;
 }
