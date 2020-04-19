@@ -1,4 +1,5 @@
 body {
+  --rojo: red; /*OJO -> Asi se crean variables en CSS puro*/
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
@@ -17,9 +18,14 @@ body {
 flex-grow, permitirá adaptar el tamaño de cada una de las cajas a nuestro antojo, veamos ejemplo aqui abajo
 */
 .caja {
-  flex-grow: 1; /*Valor 1 siginifica que cada elemento que tenga esta propiedad ocupará el mismo espacio dentro del contenedor de flexbox.
-  Esta propiedad dirá cuanto puede crecer un elemento dentro de un contenedor, para esto le aplicaremos esta propiedad a cada elemento individualmente, ver .red, .blue...*/
+  /*
+  Ojo, con solo el uso de flex-basis, no serán contenedores flexibles automáticos.
+  Es necesario combinarlo con flex-grow
+  Inlcuso en este ejemplo podemos quitar el "flex-basis: calc((100% / 3) - 68px);" y dejarle solo el flex-basis a la última caja la orange y se veremos el mismo resultado, intentalo y verás
+*/
 
+  flex-grow: 1;
+  flex-basis: calc((100% / 3) - 68px); /*La funcion calc es de CSS puro y nos permite hacer calculos*/
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -30,21 +36,24 @@ flex-grow, permitirá adaptar el tamaño de cada una de las cajas a nuestro anto
   background: gray;
 }
 
+/*flex-basis le dice a cada elemento dentro del contenedor flex, que tamaño minimo (tamaño base) deberá tener, y a partir de ahí expandiorse si tienen que expandirse o quedarse con ese tamaño*/
+
 .red {
-  flex-grow: 5;
-  background: red;
+  /*flex-basis: 25%;*/ /*este equivaldría a width: 25%;*/
+  /* flex-basis: calc(100% / 3); */
+  background: var(--rojo);
 }
 
-/*Con flex-grow vimos como aumentar el tamaño, con shrink podemos contraer el tamaño, aqui abajo le aplicamos ambos a cero y disminuimos un poco el tamaño de la caja green*/
 .green {
-  flex-grow: 0;
-  flex-shrink: 0;
+  /* flex-basis: calc(100% / 3); */
   background: green;
 }
 .blue {
+  /* flex-basis: calc(100% / 3); */
   background: blue;
 }
 .orange {
-  flex-grow: 10;
+  /* flex-basis: calc(100% / 3); */
+  flex-basis: 100%;
   background: orange;
 }
