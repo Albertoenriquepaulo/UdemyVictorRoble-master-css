@@ -165,3 +165,36 @@ body {
   background: #444;
   color: #eee;
 }
+
+#footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: 120px;
+  border-top: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+#footer .logo {
+  flex-grow: 1; /*Para cuando la pantalla se reduzca ocuparán todo el ancho cuando no quepan los elementos*/
+  flex-basis: auto;
+  flex-grow: 1;
+
+  padding: 10px;
+  margin-left: 20px;
+  color: #808080;
+
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #ccc;
+}
+
+#footer .info {
+  flex-grow: 1;
+  margin-right: 25px;
+  text-align: right;
+  color: #444;
+}
