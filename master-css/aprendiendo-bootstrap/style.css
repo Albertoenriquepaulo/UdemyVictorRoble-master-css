@@ -11,3 +11,7 @@ body {
   list-style-type: none;
   line-height: 50px;
 }
+
+.item {
+  height: 150px;
+}
