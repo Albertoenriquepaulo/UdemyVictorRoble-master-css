@@ -95,6 +95,19 @@
 
       <div class="row">
         <div class="col-md-8 mt-3">
+          <!-- El aria-label es para indicar semanticamente que tipo de funcionalidad tiene el 
+          elemento/ o componente que estamos usando. En este caso la nav de abajo se usa para
+                      MIGAS DE PAN = breadcrumb 
+        No es necesario colocarlo, pero ayuda a identificar que hace la porción de HTML que
+        estamos usanod-->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="#">Desarrollo Web</a></li>
+              <li class="breadcrumb-item"><a href="#">Componentes de Bootstrap</a></li>
+            </ol>
+          </nav>
+
           <div class="alert alert-success alert-dismissible fade show">
             <!-- fade y show nos permiten cerrar la alerta con un efecto suavizado -->
             Te has registrado correctamente
