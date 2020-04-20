@@ -12,14 +12,22 @@
       <h1>Herramientas disponiobles en Bootstrap 4</h1>
       <hr />
       <div
-        class="bg-primary float-left float-sm-none float-md-left caja w-25 h-25 border border-success rounded-0"
+        class="mx-2 bg-primary float-left float-sm-none float-md-left caja w-25 h-25 border border-success rounded-0"
       >
+        <!-- mx para margenes del eje x | mn-2 para margenes negativos, el uso de la "n" es para numeros negativos-->
         Esto es una caja
       </div>
-      <div class="bg-danger float-left caja w-25 h-25 border border-primary rounded-0">
+      <div class="my-2 bg-danger float-left caja w-25 h-25 border border-primary rounded-0">
+        <!-- "my" para margenes del eje Y, m-1 es 4px, m2 8px -->
         Esto es una caja
       </div>
       <div class="bg-warning float-left caja w-25 h-25 border border-dark rounded-0">
+        Esto es una caja
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="mx-auto m-2 p-3 text-light bg-success caja w-25 h-25 border border-dark rounded-0">
+        <!-- para centrar esta caja usamos mx-auto = margin: 0 auto-->
         Esto es una caja
       </div>
       <div class="clearfix"></div>
