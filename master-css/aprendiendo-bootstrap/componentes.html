@@ -300,6 +300,55 @@
           >
             Alerta 3
           </button>
+
+          <!-- POPOVER Btn -->
+          <div class="clearfix"></div>
+          <button
+            type="button"
+            class="btn btn-warning mt-3 popOverBtn"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="left"
+            data-content="Soy un Popover"
+            title="Left"
+          >
+            <p><small>Popover1</small></p>
+          </button>
+          <button
+            type="button"
+            class="btn btn-info mt-3 popOverBtn"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="top"
+            data-content="Soy un Popover"
+            title="Top"
+          >
+            <p><small>Popover2</small></p>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary mt-3 popOverBtn"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="bottom"
+            data-content="Soy un Popover"
+            title="Bottom"
+          >
+            <p><small>Popover3</small></p>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary mt-3 popOverBtn"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="right"
+            data-content="Soy un Popover"
+            title="Right"
+          >
+            <p><small>Popover4</small></p>
+          </button>
+          <!-- FIN POPOVER Btn -->
+
           <!-- FIN TOOLTIP -->
         </div>
 
@@ -399,6 +448,7 @@
         });
 
         $(".toolTipBtn").tooltip();
+        $(".popOverBtn").popover();
       });
     </script>
     <!-- FIN (JQuery) SLIDER / Galeria -->
