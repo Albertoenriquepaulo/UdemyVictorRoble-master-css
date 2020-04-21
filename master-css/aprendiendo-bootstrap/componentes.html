@@ -271,6 +271,36 @@
             }, 150);
           </script>
           <!-- FIN BARRA PROGRESO - PROGRESS BAR -->
+
+          <!-- TOOLTIP, el boton tiene asociado jquery code, ver abajo -->
+          <button
+            type="button"
+            class="btn btn-danger mt-3 toolTipBtn"
+            data-toggle="tooltip"
+            data-placement="left"
+            title="Soy un Tool Tip y me ves en el lado Izquierdo"
+          >
+            Alerta 1
+          </button>
+          <button
+            type="button"
+            class="btn btn-info mt-3 toolTipBtn"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Soy un Tool Tip y me ves en el Centro"
+          >
+            Alerta 2
+          </button>
+          <button
+            type="button"
+            class="btn btn-warning mt-3 toolTipBtn"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Soy un Tool Tip y me ves en el lado Derecho"
+          >
+            Alerta 3
+          </button>
+          <!-- FIN TOOLTIP -->
         </div>
 
         <!-- FIN MODAL -->
@@ -367,6 +397,8 @@
         $(".carousel").carousel({
           interval: 3000,
         });
+
+        $(".toolTipBtn").tooltip();
       });
     </script>
     <!-- FIN (JQuery) SLIDER / Galeria -->
