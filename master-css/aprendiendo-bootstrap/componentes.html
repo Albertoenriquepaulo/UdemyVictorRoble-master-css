@@ -154,18 +154,20 @@
                 </div>
               </div>
             </div>
-          </div>
-          <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
+            <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
 
-          <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="sr-only">Siguiente</span>
-          </a>
+            <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+
           <!-- FIN SLIDER / Galeria -->
 
+          <!-- ALERT -->
           <div class="alert alert-success alert-dismissible fade show">
             <!-- fade y show nos permiten cerrar la alerta con un efecto suavizado -->
             Te has registrado correctamente
@@ -174,6 +176,9 @@
               <span>&times;</span>
             </button>
           </div>
+
+          <!-- FIN ALERT -->
+
           <!-- BADGET -->
           <h2>
             <span class="badge badge-success">
@@ -243,6 +248,29 @@
           </div>
 
           <!-- FIN COLLAPSE -->
+
+          <!-- BARRA PROGRESO - PROGRESS BAR -->
+          <div class="progress mt-5">
+            <!-- El ancho del progress-bar (w-50) dice el % de la misma -->
+            <div id="progressBar" class="progress-bar bg-success" role="progressbar"></div>
+          </div>
+
+          <script>
+            let counter = 0;
+            let progressBar = document.querySelector("#progressBar");
+            let strProgressBar;
+            let myInterval = setInterval(() => {
+              if (counter < 100) {
+                counter++;
+                strProgressBar = counter + "%";
+                progressBar.style.width = strProgressBar;
+                progressBar.innerHTML = strProgressBar;
+              } else {
+                clearInterval(myInterval);
+              }
+            }, 150);
+          </script>
+          <!-- FIN BARRA PROGRESO - PROGRESS BAR -->
         </div>
 
         <!-- FIN MODAL -->
@@ -301,6 +329,7 @@
       <!-- FIN PAGINATION -->
 
       <!-- FIN TARJETAS -->
+
       <!-- JUMBOTRON -->
       <div class="row">
         <div class="jumbotron my-3 col-md-8">
